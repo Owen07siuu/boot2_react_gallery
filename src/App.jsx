@@ -6,6 +6,7 @@ import { Cris3 } from './components/Cris3';
 import { Cris4 } from './components/Cris4';
 import { Cris5 } from './components/Cris5';
 import { Cris6 } from './components/Cris6';
+import { Navigation } from './components/Navigation';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='/Cris5' element={<Cris5 />} />
         <Route path='/Cris6' element={<Cris6 />} />
         </Routes>
+        <Navigation />
    </BrowserRouter>
     </>
   )
