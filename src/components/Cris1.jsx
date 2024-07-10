@@ -1,8 +1,14 @@
 import cris1 from  "../assets/img/cris1.jpg"
-export const Cris1 = () => {
+import PropTypes from "prop-types";
+
+export const Cris1 = ( {className}) => {
   return (
-    <div>
-      <img src={cris1} alt="Cristiano con el madrid" />
+    <div className={`image-container ${className}`}>
+      <img src={cris1} alt="foto cristiano" className="image" />
     </div>
   )
 }
+Cris1.propTypes = {
+  className: PropTypes.string
+};
+
